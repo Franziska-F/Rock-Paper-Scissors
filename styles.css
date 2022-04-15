@@ -17,7 +17,8 @@ h1 {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: white;
+  background-color: #e01073;
+  color: whitesmoke;
 }
 
 .score-board {
