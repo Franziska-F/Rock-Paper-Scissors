@@ -33,6 +33,7 @@ function draw(user, computer) {
 
 function game(usersChoice) {
   const computersChoice = getComputersChoice();
+
   switch (usersChoice + computersChoice) {
     case "RockPaper":
     case "PaperScissors":
@@ -51,10 +52,17 @@ function game(usersChoice) {
       break;
   }
 }
+function style() {
+  document.querySelector("#rock").classList.add("background-choice");
+  setTimeout(function () {
+    document.querySelector("#rock").classList.remove("background-choice");
+  }, 1000);
+}
 
 function main() {
   rock.addEventListener("click", function () {
     game("Rock");
+    style();
   });
   paper.addEventListener("click", function () {
     game("Paper");
